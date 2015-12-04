@@ -22,10 +22,6 @@ a:hover {
     .navbar-fixed-top .navbar-brand {
         padding: 15px 0;
     }
-
-    .carousel-inner {
-      height: 300px !important;
-    }
 }
 
 /*@media(max-width:1170px)  {
@@ -109,14 +105,6 @@ a:hover {
   background-color: #7e0001;
 }
 
-.carousel-inner {
-  height: 100px;
-}
-
-.carousel-inner > .item > img {
-    margin: 0 auto;
-}
-
 .divider-vertical {
   height: 50px;
   margin: 5% 10px;
@@ -146,4 +134,5 @@ a:hover {
   vertical-align: middle;
   width: 100%;
   text-align: center;
+  background-color: #7e0001;
 }
