@@ -24,6 +24,12 @@ a:hover {
     }
 }
 
+.slider {
+    height: 300px;
+    background-color: #7e0001;
+
+}
+
 /*@media(max-width:1170px)  {
     .navbar-collapse.collapse {
         display: none !important;
