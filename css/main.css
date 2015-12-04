@@ -29,6 +29,14 @@ a:hover {
     background-color: #7e0001;
 }
 
+.img-banner {
+    height: 500px;
+}
+
+.img-banner p {
+    width: 300px;
+}
+
 /*@media(max-width:1170px)  {
     .navbar-collapse.collapse {
         display: none !important;
