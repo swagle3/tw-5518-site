@@ -1,12 +1,27 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 body {
-    padding-top: 150px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
-    background: #ddd;
+  background: #ddd;
+}
+
+#main {
+  padding-top: 150px;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+
+#sidebar {
+  left: -200px;
+	position: fixed;
+	width: 150px;
+  height: 100%;
+	background: #48a770;
 }
 
 a {
   text-decoration: none;
+  /*color: #5d8cc2;*/
   color: #fff;
 }
 
@@ -15,8 +30,13 @@ a:hover {
   color: #5d8cc2;
 }
 
+hr {
+  border-color: #444;
+  border-top-width: 2px;
+}
+
 @media(min-width:768px) {
-    body {
+    #main {
         padding-top: 100px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
     }
 
@@ -44,32 +64,6 @@ a:hover {
    color: #fff;
 }
 
-.img-banner {
-    height: 600px;
-}
-
-.img-banner p {
-    width: 500px;
-}
-
-/*@media(max-width:1170px)  {
-    .navbar-collapse.collapse {
-        display: none !important;
-    }
-
-    .navbar-collapse {
-        overflow-x: visible !important;
-    }
-
-    .navbar-collapse.in {
-      overflow-y: auto !important;
-    }
-
-    .collapse.in {
-      display: block !important;
-    }
-} */
-
 .jumbotron {
   background-color: #a80000;
   color: #fff;
@@ -81,6 +75,10 @@ a:hover {
 
 .navbar-fixed-top .navbar-brand {
     padding: 0 15px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
 }
 
 #header {
@@ -103,10 +101,16 @@ a:hover {
   color: #fff;
   font-size: 12px;
   padding: 20px 0px;
+  margin-top: 20px;
 }
 
 #main-banner {
   background-image: url("../img/robot2.jpg");
+  height: 600px;
+}
+
+#main-banner p {
+    width: 500px;
 }
 
 #menu-icon {
@@ -117,7 +121,7 @@ a:hover {
   background-repeat: no-repeat;
 }
 
-.open #menu-icon {
+.open .dropdown-toggle {
   background-color: #7e0001 !important;
 }
 
@@ -162,4 +166,42 @@ a:hover {
   vertical-align: middle;
   width: 100%;
   text-align: center;
+}
+
+/**** PAGE STYLE ****/
+#main.notop {
+  padding-top: 80px !important;
+}
+
+div.page {
+  background-color: #a22;
+}
+
+div.logo img {
+  height: 130px;
+}
+
+/**** SPONSORS STYLE ****/
+#tw-sponsor {
+  background-image: url("../img/robot2.jpg");
+}
+
+#pw-sponsor {
+  background-image: url("../img/0T8A2619.jpg");
+}
+
+#dw-sponsor {
+  background-image: url("../img/0T8A2619.jpg");
+}
+
+#gw-sponsor {
+  background-image: url("../img/IMG_5876.jpg");
+}
+
+#sw-sponsor {
+  background-image: url("../img/IMG_5876.jpg");
+}
+
+#bw-sponsor {
+  background-image: url("../img/IMG_8534.JPG");
 }
