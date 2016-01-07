@@ -11,6 +11,10 @@ body {
   height: 100%;
 }
 
+#main-banner {
+  text-align: center;
+}
+
 #sidebar {
   left: -200px;
 	position: fixed;
